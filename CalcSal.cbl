@@ -1,4 +1,4 @@
-       IDENTIFICATION DIVISION.
+IDENTIFICATION DIVISION.
        PROGRAM-ID. CALCSAL.
 
        ENVIRONMENT DIVISION.
@@ -21,21 +21,20 @@
        PROCEDURE DIVISION.
 
        MAIN-PROCEDURE.
-           PERFORM MENU-SISTEMA UNTIL WS-OPCAO-MENU = 2
+           PERFORM MENU-SISTEMA UNTIL WS-OPCAO-MENU = 2.
            STOP RUN.
 
        MENU-SISTEMA.
            DISPLAY '--- SISTEMA DE CALCULO ---'
            DISPLAY '1 - Calcular'
            DISPLAY '2 - Sair'
-           ACCEPT WS-OPCAO-MENU
+           ACCEPT WS-OPCAO-MENU.
 
            IF WS-OPCAO-MENU = 1
                PERFORM ENTRADA-DADOS
                PERFORM CALCULA-BONUS
                PERFORM CALCULA-SALARIO
-               PERFORM EXIBE-RESULTADO
-           END-IF.
+               PERFORM EXIBE-RESULTADO.
 
        ENTRADA-DADOS.
            DISPLAY 'Digite o Nome: '
@@ -52,13 +51,10 @@
                IF WS-TEMPO-EMPRESA NOT > 5
                    COMPUTE WS-BONUS = WS-SALARIO-BASE * 0.10
                ELSE
-                   COMPUTE WS-BONUS = WS-SALARIO-BASE * 0.15
-               END-IF
-           END-IF.
+                   COMPUTE WS-BONUS = WS-SALARIO-BASE * 0.15.
 
        CALCULA-SALARIO.
-           COMPUTE WS-SALARIO-FINAL =
-                   WS-SALARIO-BASE + WS-BONUS.
+           COMPUTE WS-SALARIO-FINAL = WS-SALARIO-BASE + WS-BONUS.
 
        EXIBE-RESULTADO.
            DISPLAY '--------------------------------'
