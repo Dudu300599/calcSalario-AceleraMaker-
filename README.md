@@ -1,6 +1,6 @@
 # Projeto: Calculadora de Salário Final (COBOL)
 
-Este programa foi desenvolvido como parte do **Projeto 3 da Semana 5 do curso Acelerador**, com o objetivo de colocar em prática os conhecimentos de **COBOL**, utilizando **parágrafos** e o comando **PERFORM** para organizar a lógica do programa.
+Este programa foi desenvolvido como parte do **Projeto 3 do projeto Acelera Maker**, com o objetivo de colocar em prática os conhecimentos de **COBOL**, utilizando **parágrafos** e o comando **PERFORM** para organizar a lógica do programa.
 
 ## Funcionalidades
 
